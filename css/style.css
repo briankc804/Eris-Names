@@ -1,49 +1,27 @@
-
- body{
-     background-color: brown;
- }
 .navbar{
     display: flex;
-    gap: 15%;
-    background-color: blueviolet;
-    color: aliceblue;
-}
-.navbar ul li{
-    display:inline-flex;
-    margin: 8px;
-    font-size: x-large;
+    background-color: grey;
+    
     
 }
-
-.header h3{
-    padding: 20px;
-    font-weight: 800;
-    font-size: xx-large;
+.navlist{
+    color: brown;
+    font-style: oblique;
+    text-decoration: none;
+    text-align:right;
+    
 }
 img{
+    width: 30%;
+    height: 30%;
+    border-radius: 90%;
+    margin-left: 20%;
     float: left;
-    margin-left: 10;
-    border-radius: 60%;
-    width: 100px;
-    height: 100px;
 }
-table th,td{
-    border: 1px solid;
-}
-th{
-    color: orangered;
+h1{
+    color: brown;
+    font-weight: 500;
     font-size: xx-large;
-    font-weight: 700;
+    font-style: italic;
+}
 
-}
-td{
-    color:black;
-}
-legend{
-    font-size: xx-large;
-    color: aqua;
-    font-variant: inherit;
-}
-input[type=submit]:hover{
-    background-color: greenyellow;
-}

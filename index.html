@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERIS-NAMES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="Header">
+            <img src="images/ghana.jpeg" alt="A Ghanian flag">
+            <H1>AKAN NAMES GENERATOR</H1>
+    <P>The Akans are a meta-ethnicity who primarily lived in Ghana.<br>The Akans have a unique maming system, which is based on the the day a child was born.<br>Each day has one or more variants, but there's usually not much to choose from.</P>
+    <table>
+        <tr>
+            <th>Female Name</th>
+            <th>Male Name</th>
+            <th>Day of the Week</th>
+        </tr>
+        <tr>
+        <td>Akosua</td>
+        <td>Kwasi</td>
+        <td>Sunday</td>
+        </tr>
+
+        <tr>
+            <td>Adwoa</td>
+            <td>Kwadwo</td>
+            <td>Monday</td>
+            </tr>
+
+            <tr>
+                <td>Abenaa</td>
+                <td>Kwabena</td>
+                <td>Tuesday</td>
+           </tr>
+
+           <tr>
+            <td>Akua</td>
+            <td>Kwaku</td>
+            <td>Wednesday</td>
+       </tr>
+
+       <tr>
+        <td>Yaa</td>
+        <td>Yaw</td>
+        <td>Thursday</td>
+   </tr>
+
+   <tr>
+    <td>Afua</td>
+    <td>Kofi</td>
+    <td>Friday</td>
+</tr>
+
+<tr>
+    <td>Ama</td>
+    <td>kwame</td>
+    <td>Saturday</td>
+</tr>
+
+
+    </table>
+
+        </div>
+        <div class="col-md-8">
+          <form id="form" name="form" onsubmit="findDay()"> 
+            <legend>Fill to generate name:
+              <hr>  
+            </legend>
+            <label supposing="Month">Month</label>
+            <input type="number" id="month" name="month" max="12" min="1" required placeholder="example:January=1,June=6,December=12">
+
+            <label supposing="Date">Date</label>
+            <input type="number" id="date" name="date" max="31" min="1" recquired placeholder="Example:16"> 
+
+            <label supposing="Year">Year of birth</label>
+            <input type="number" id="year" name="yer" max="2022" min="1963" recquired placeholder="example:1962">
+
+            <p>select your gender:<br></p>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="Male" checked>
+                    Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+            </div>
+            <input type="SUBMIT" value="SUBMIT" id="btn">
+
+
+
+          </form>  
+         </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

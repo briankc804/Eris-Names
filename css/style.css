@@ -1,0 +1,49 @@
+
+ body{
+     background-color: brown;
+ }
+.navbar{
+    display: flex;
+    gap: 15%;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.navbar ul li{
+    display:inline-flex;
+    margin: 8px;
+    font-size: x-large;
+    
+}
+
+.header h3{
+    padding: 20px;
+    font-weight: 800;
+    font-size: xx-large;
+}
+img{
+    float: left;
+    margin-left: 10;
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+}
+table th,td{
+    border: 1px solid;
+}
+th{
+    color: orangered;
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+td{
+    color:black;
+}
+legend{
+    font-size: xx-large;
+    color: aqua;
+    font-variant: inherit;
+}
+input[type=submit]:hover{
+    background-color: greenyellow;
+}

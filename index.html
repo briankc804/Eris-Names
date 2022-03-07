@@ -81,37 +81,29 @@
  </table>
 
         </div>
-        <div class="col-md-8">
-          <form id="form" name="form" onsubmit="findDay()"> 
+        <div class="form">
+          <form id="myForm" name="form" onsubmit="findDay()"> 
             <legend>Fill to generate name:
               <hr>  
             </legend>
-            <label supposing="Month">Month</label>
-            <input type="number" id="month" name="month" max="12" min="1" required placeholder="example:January=1,June=6,December=12">
-
-            <label supposing="Date">Date</label>
-            <input type="number" id="date" name="date" max="31" min="1" recquired placeholder="Example:16"> 
-
-            <label supposing="Year">Year of birth</label>
-            <input type="number" id="year" name="year" max="2022" min="1963" recquired placeholder="example:1962">
-
-            <p>select your gender:<br></p>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="gender" value="Male" checked>
-                    Male
-                </label>
+            <div class="logo">
+                <label for="gender",>whats your gender?</label>
+                <select id="gender" name="gender">
+                <option value="male">male</option>  
+                <option value="female">female</option>
+            </select>
+                     
             </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="gender" value="Female">
-                    Female
-                </label>
-
+            <div class="period">
+                <label for="date">Enter your birthday?</label>
+                <input type="date" name="date" id="date" required>
+                
             </div>
-            <input type="submit" value="SUBMIT">
-        
+           <div class="full">
+            <button type="SUBMIT">SUBMIT</button>
+            </div>
          </form> 
+         <p id="message"></p>
  
          </div>
 

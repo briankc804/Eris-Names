@@ -18,4 +18,13 @@ var akan = function(year, month, day, gender) {
 let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 let females=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 let males=["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-let button=documen.getElementById("SUBMIT")button
+let button=documen.getElementById("SUBMIT")
+button.addEventListener("click"myFunction);
+function myFunction() {
+    let date=document.getElementById("date").value
+    let year=new Date(date);
+    let dayWeek=year.getDay();//numbers
+     // alert(dayweek);
+     alert(female[dayWeek])
+     // alert(female[dayWeek])
+}

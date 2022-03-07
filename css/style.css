@@ -39,6 +39,7 @@ th{
 td{
     color:black;
     text-align: center;
+    font-style: inherit;
 }
 legend{
     font-size: larger;

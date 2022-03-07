@@ -1,4 +1,5 @@
 .navbar{
+
     display: flex;
     background-color: grey;
     
@@ -24,4 +25,10 @@ h1{
     font-size: xx-large;
     font-style: italic;
 }
-
+p{
+    font-size: medium;
+    color: aquamarine;
+}
+table th,td{
+    border: 1px solid;
+}

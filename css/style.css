@@ -32,3 +32,19 @@ p{
 table th,td{
     border: 1px solid;
 }
+th{
+    color: orange;
+    font-size: larger;
+}
+td{
+    color:black;
+    text-align: center;
+}
+legend{
+    font-size: larger;
+    color: black;
+    font-variant: inherit;
+}
+input[type=SUBMIT]:hover{
+    background-color: goldenrod;
+}

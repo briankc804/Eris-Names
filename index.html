@@ -29,56 +29,35 @@
             <img src="images/ghana.jpeg" alt="A Ghanian flag">
             <H1>AKAN NAMES GENERATOR</H1>
     <P>The Akans are a meta-ethnicity who primarily lived in Ghana.<br>The Akans have a unique maming system, which is based on the the day a child was born.<br>Each day has one or more variants, but there's usually not much to choose from.Males and female children are named differently</P>
-    <table>
         
-        <tr>
-            <th>Female Name</th>
-            <th>Male Name</th>
-            <th>Day of the Week</th>
-        </tr>
-        <tr>
-        <td>Akosua</td>
-        <td>Kwasi</td>
-        <td>Sunday</td>
-        </tr>
-
-        <tr>
-            <td>Adwoa</td>
-            <td>Kwadwo</td>
-            <td>Monday</td>
-            </tr>
-
-            <tr>
-                <td>Abenaa</td>
-                <td>Kwabena</td>
-                <td>Tuesday</td>
-           </tr>
-
-           <tr>
-            <td>Akua</td>
-            <td>Kwaku</td>
-            <td>Wednesday</td>
-       </tr>
-
-       <tr>
-        <td>Yaa</td>
-        <td>Yaw</td>
-        <td>Thursday</td>
-   </tr>
-
-   <tr>
-    <td>Afua</td>
-    <td>Kofi</td>
-    <td>Friday</td>
-</tr>
-
-<tr>
-    <td>Ama</td>
-    <td>kwame</td>
-    <td>Saturday</td>
-</tr>
-
- </table>
+    <div class="names">
+        <div class="col-md-6">
+            <h4><i class="girls"></i>&nbsp;&nbsp;Female</h4>
+            <ul class="girlsName">
+                <li>Sunday: Akosua</li>
+                <li>Monday: Adwoa</li>
+                <li>Tuesday: Abenaa</li>
+                <li>Wednesday: Akua</li>
+                <li>Thursday:  Yaa</li>
+                <li>Friday: Afua</li>
+                <li>Saturday: Ama</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4><i class="boys"></i>&nbsp;&nbsp; Male</h4>
+            <ul class="boysName">
+                <li>Sunday: Kwasi</li>
+                <li>Monday: Kwadwo</li>
+                <li>Tuesday: Kwabena</li>
+                <li>Wednesday: Kwaku</li>
+                <li>Thursday:  Yaw</li>
+                <li>Friday: Kofi</li>
+                <li>Saturday: Kwame</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
 
         </div>
         <div class="form">
@@ -89,8 +68,8 @@
             <div class="logo">
                 <label for="gender",>whats your gender?</label>
                 <select id="gender" name="gender">
-                <option value="male">male</option>  
-                <option value="female">female</option>
+                <option value="male" id="male">Male</option>  
+                <option value="female" id="female">Female</option>
             </select>
                      
             </div>
@@ -99,8 +78,8 @@
                 <input type="date" name="date" id="date" required>
                 
             </div>
-           <div class="full">
-            <button type="SUBMIT">SUBMIT</button>
+           <div class="click">
+            <button type="submit">submit</button>
             </div>
          </form> 
          <p id="message"></p>

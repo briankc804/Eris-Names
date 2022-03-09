@@ -1,92 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERIS-NAMES</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+	<title>Akan Names Web Application</title>
+   	<link rel='stylesheet' href='css/styles.css'>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="navlist">
-                <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+	<div class="container">
+		<div class="row">
+			
+			
+				<h1>AKAN NAMES GENERATOR</h1>
+                <div class="image">
+				<img src="./images/ghana.jpeg" alt="Ghana's flag">
 
-                </ul>
 
-            </div>
+                </div>
+				
+					<p class="Description"> Akan names are derived from Ghanian culture.<br> In Ghana, children are given their first name according to the day of the week  they were born in.<br>This is a web application that takes a person's Birthday and calculates the day they were born in and generates their name according to their gender in Akan name</p>
+					<div class="female names">
+							<h4><i class="female"></i>&nbsp;&nbsp;Female</h4>
+							<ol class="mp3">
+								<li>Sunday: Akosua</li>
+								<li>Monday: Adwoa</li>
+								<li>Tuesday: Abenaa</li>
+								<li>Wednesday: Akua</li>
+								<li>Thursday:  Yaa</li>
+								<li>Friday: Afua</li>
+								<li>Saturday: Ama</li>
+							</ol>
+						</div>
+						<div class="male names">
+							<h4><i class="male"></i>&nbsp;&nbsp; Male</h4>
+							<ol class="mp3">
+								<li>Sunday: Kwasi</li>
+								<li>Monday: Kwadwo</li>
+								<li>Tuesday: Kwabena</li>
+								<li>Wednesday: Kwaku</li>
+								<li>Thursday:  Yaw</li>
+								<li>Friday: Kofi</li>
+								<li>Saturday: Kwame</li>
+							</0l>
+						</div>
+					
+			
+			<div class="myForm">
+				<h5>Enter date of birth to get Akan name:</h5>
+				<div class="stylist-form">
+					<form id="myform">
+						<div class="form-group">
+			              	<label class="label">Birthday</label>
+			               	<div class="input-group mb15">
+				                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="date" id="date" name="name" required>
+				             </div>
+			            </div>   
 
-        </div>
-
-    </div>
-    <div class="container">
-        <div class="Header">
-            <img src="images/ghana.jpeg" alt="A Ghanian flag">
-            <H1>AKAN NAMES GENERATOR</H1>
-    <P>The Akans are a meta-ethnicity who primarily lived in Ghana.<br>The Akans have a unique maming system, which is based on the the day a child was born.<br>Each day has one or more variants, but there's usually not much to choose from.Males and female children are named differently</P>
-        
-    <div class="names">
-        <div class="col-md-6">
-            <h4><i class="girls"></i>&nbsp;&nbsp;Female</h4>
-            <ul class="girlsName">
-                <li>Sunday: Akosua</li>
-                <li>Monday: Adwoa</li>
-                <li>Tuesday: Abenaa</li>
-                <li>Wednesday: Akua</li>
-                <li>Thursday:  Yaa</li>
-                <li>Friday: Afua</li>
-                <li>Saturday: Ama</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <h4><i class="boys"></i>&nbsp;&nbsp; Male</h4>
-            <ul class="boysName">
-                <li>Sunday: Kwasi</li>
-                <li>Monday: Kwadwo</li>
-                <li>Tuesday: Kwabena</li>
-                <li>Wednesday: Kwaku</li>
-                <li>Thursday:  Yaw</li>
-                <li>Friday: Kofi</li>
-                <li>Saturday: Kwame</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-
-        </div>
-        <div class="form">
-          <form id="myForm" name="form" onsubmit="findDay()"> 
-            <legend>Fill to generate name:
-              <hr>  
-            </legend>
-            <div class="logo">
-                <label for="gender",>whats your gender?</label>
-                <select id="gender" name="gender">
-                <option value="male" id="male">Male</option>  
-                <option value="female" id="female">Female</option>
-            </select>
-                     
-            </div>
-            <div class="period">
-                <label for="date">Enter your birthday?</label>
-                <input type="date" name="date" id="date" required>
-                
-            </div>
-           <div class="click">
-            <button type="submit">submit</button>
-            </div>
-         </form> 
-         <p id="message"></p>
- 
-         </div>
-
-    </div>
-    <script src="js/script.js"></script>
+						<div class="form-group ">
+			              	<label class="label">Gender</label>
+			               	<div class="rdio rdio-default mp3">
+		                        <input type="radio" name="gender" id="male" value="Male" required>
+		                        <label for="male">&nbsp;&nbsp;Male</label>
+		                    </div>
+		                    <div class="rdio rdio-default mp3">
+		                        <input type="radio" name="gender" value="Female" id="female" required>
+		                        <label for="female">&nbsp;&nbsp;Female</label>
+		                     </div>
+			            </div>
+			            <button type="submit" id="btn" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                        <button type="reset" id="reset" onclick="resetall()">Reset</button>
+					</form>	
+				</div>
+				<hr>
+				<div class="your akan name is">
+					<p id="message" class="output"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <script src="./js/script.js"></script>
 </body>
 </html>

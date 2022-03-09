@@ -1,0 +1,23 @@
+body{
+    background-color: orangered;
+    border-radius: 5px;
+
+}
+H1{
+    font-size: xx-large;
+    color: white;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    
+
+}
+p{
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
